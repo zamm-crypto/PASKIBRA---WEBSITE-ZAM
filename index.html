@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PASKIBRAKA — Informasi & Buku Tamu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <img id="logo" src="logo-placeholder.png" alt="Logo PASKIBRAKA" />
+      <h1 class="site-title">PASKIBRAKA</h1>
+      <p class="tagline">Semangat, Disiplin, dan Kebanggaan</p>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <section class="hero card">
+      <div class="hero-inner">
+        <h2>Selamat Datang di PASKIBRAKA</h2>
+        <p>Website resmi profil dan informasi kegiatan Paskibra. Didesain responsif untuk pengalaman terbaik di HP.</p>
+        <a class="btn" href="#about">Pelajari Lebih</a>
+      </div>
+    </section>
+
+    <section id="about" class="card section-fade">
+      <h3>Tentang Paskibra</h3>
+      <p><strong>Paskibra</strong> (Pasukan Pengibar Bendera) adalah kelompok kebanggaan yang bertugas dalam upacara kenegaraan dan kegiatan bendera sekolah/daerah. Mereka dilatih disiplin, formasi, dan etika baris-berbaris.</p>
+      <ul>
+        <li>Sejarah singkat dan nilai-nilai</li>
+        <li>Tugas utama: pengibaran & penurunan bendera</li>
+        <li>Manfaat: kepemimpinan, kerja tim, disiplin</li>
+      </ul>
+    </section>
+
+    <section id="activities" class="card section-fade">
+      <h3>Kegiatan & Galeri</h3>
+      <div class="grid gallery">
+        <div class="gallery-item hover-scale">Foto latihan 1</div>
+        <div class="gallery-item hover-scale">Foto latihan 2</div>
+        <div class="gallery-item hover-scale">Foto latihan 3</div>
+        <div class="gallery-item hover-scale">Foto latihan 4</div>
+      </div>
+      <p class="muted">Ganti placeholder gallery dengan foto asli menggunakan nama file di folder <code>/images</code>.</p>
+    </section>
+
+    <section id="team" class="card section-fade">
+      <h3>Struktur Organisasi</h3>
+      <div class="grid team-grid">
+        <div class="team-card hover-scale">
+          <div class="avatar">K</div>
+          <div><strong>Ketua</strong><div class="muted">Nama Ketua</div></div>
+        </div>
+        <div class="team-card hover-scale">
+          <div class="avatar">W</div>
+          <div><strong>Wakil</strong><div class="muted">Nama Wakil</div></div>
+        </div>
+        <div class="team-card hover-scale">
+          <div class="avatar">P</div>
+          <div><strong>Pelatih</strong><div class="muted">Nama Pelatih</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="guestbook" class="card section-fade">
+      <h3>Buku Tamu — Daftar Pengunjung</h3>
+      <p>Silakan masukkan nama kamu saat berkunjung. Nama akan tersimpan di browser dan tampil di daftar pengunjung.</p>
+
+      <form id="guest-form" class="guest-form" onsubmit="return false;">
+        <input id="guest-name" type="text" placeholder="Masukkan nama kamu..." required />
+        <button id="add-guest" class="btn">Masuk</button>
+      </form>
+
+      <div class="guest-controls">
+        <button id="clear-guests" class="btn-outline">Hapus Semua Pengunjung</button>
+      </div>
+
+      <div class="guest-list card-muted" id="guest-list">
+        <h4>Pengunjung Hari Ini</h4>
+        <ol id="guests"></ol>
+      </div>
+    </section>
+
+    <section class="card section-fade">
+      <h3>Petunjuk Mengganti Logo & Foto (di HP)</h3>
+      <ol>
+        <li>Ganti file <code>logo-placeholder.png</code> di folder website dengan logo kamu (nama file harus sama).</li>
+        <li>Tambahkan foto galeri di folder <code>/images</code> dan ganti elemen gallery atau gunakan URL langsung.</li>
+      </ol>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="year"></span> PASKIBRAKA — Dibuat dengan ❤️</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
